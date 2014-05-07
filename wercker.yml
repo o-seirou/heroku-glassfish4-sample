@@ -3,4 +3,4 @@ build:
     steps:
         - script:
             name: maven build
-            code: "mvn clean package javadoc:jar source:jar install"
+            code: "mvn clean package"
