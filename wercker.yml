@@ -1,1 +1,4 @@
-box: wercker/default
+box: mihkels/java8-oracle@0.0.1
+build:
+  steps:
+    - mvn-compile
