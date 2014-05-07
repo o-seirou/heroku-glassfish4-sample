@@ -1,4 +1,6 @@
 box: mihkels/java8-oracle@0.0.1
 build:
-  steps:
-    - mvn-compile
+    steps:
+        - script:
+            name: maven build
+            code: "mvn clean package javadoc:jar source:jar install"
