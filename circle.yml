@@ -3,7 +3,7 @@ machine:
     version: oraclejdk8
 test:
   post:
-    - mvn site -DartifactTargetPath=${CIRCLE_ARTIFACTS}
+    - mvn site -DartifactTargetPath=$CIRCLE_ARTIFACTS
 deployment:
   staging:
     branch: master
