@@ -21,7 +21,10 @@ public class MyApplicationTest extends TestCase {
 		List<String> data = Arrays.asList("Java","Ruby","Python","Rerl");
 		data.forEach(s -> { System.out.println(s); });
 
+		MyApplication target = new MyApplication();
+
 	}
+
 
 	public void tearDown() throws Exception {
 
