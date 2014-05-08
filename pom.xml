@@ -71,7 +71,7 @@
     </plugins>
   </build>
     <reporting>
-        <outputDirectory>${artifactTargetPath}}</outputDirectory>
+        <outputDirectory>${artifactTargetPath}</outputDirectory>
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
