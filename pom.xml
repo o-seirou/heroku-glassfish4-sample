@@ -12,6 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <artifactTargetPath>${project.build.directory}</artifactTargetPath>
   </properties>
 
   <dependencies>
@@ -70,6 +71,7 @@
     </plugins>
   </build>
     <reporting>
+        <outputDirectory>${artifactTargetPath}}</outputDirectory>
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>

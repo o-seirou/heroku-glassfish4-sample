@@ -1,8 +1,9 @@
 machine:
   java:
     version: oraclejdk8
-    environment:
-      CIRCLE_ARTIFACTS: target
+test:
+  post:
+    - mvn site -DartifactTargetPath=${CIRCLE_ARTIFACTS}
 deployment:
   staging:
     branch: master
