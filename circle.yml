@@ -1,6 +1,8 @@
 machine:
   java:
     version: oraclejdk8
+    environment:
+      CIRCLE_ARTIFACTS: target
 deployment:
   staging:
     branch: master
