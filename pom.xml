@@ -72,12 +72,14 @@
     </plugins>
   </build>
     <reporting>
-        <outputDirectory>${artifactTargetPath}</outputDirectory>
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>cobertura-maven-plugin</artifactId>
                 <version>2.5</version>
+                <configuration>
+                    <outputDirectory>${artifactTargetPath}</outputDirectory>
+                </configuration>
             </plugin>
         </plugins>
     </reporting>
