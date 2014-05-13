@@ -1,0 +1,11 @@
+machine:
+  java:
+    version: oraclejdk8
+test:
+  post:
+    - mvn site -DartifactTargetPath=$CIRCLE_ARTIFACTS
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: heroku-glassfish4-spl
